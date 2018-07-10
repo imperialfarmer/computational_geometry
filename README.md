@@ -5,6 +5,14 @@ Some commonly-used algorithms in b-spline and NURBS
 
 ## De-Boor Algorithm:
 De-Boor Algorithm is an efficient and stable numerical method to evaluate the Splines.
+### Basic idea
+For a spline with degree of k, it will insert the point of interest t* k times to make
+sure the spline passes through t*, then the position of control point in this case is
+just t*. The procedure of inserting can be seen as conducting subdivision on the lines
+between control points, the original ones as well as newly-generated ones.
+### How to choose the control points to subdivide
+
+
 ```
 Input: 
 k // Spline Degree, which is also required multiplicity
