@@ -4,6 +4,7 @@ Some commonly-used algorithms in b-spline and NURBS
 ----
 
 ## De-Boor Algorithm:
+De-Boor Algorithm is an efficient and stable numerical method to evaluate the Splines.
 ```
 Input: 
 k // Spline Degree, which is also required multiplicity
