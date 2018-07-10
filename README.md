@@ -1,6 +1,6 @@
 Computational Geometry
 ====
-Collection some commonly-used algorithms in b-spline and NURBS
+Collection of some commonly-used algorithms in b-spline and NURBS
 ----
 
 ## 1. Cox De-Boor Algorithm:
