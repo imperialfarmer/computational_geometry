@@ -13,6 +13,7 @@ between control points, the original ones as well as newly-generated ones.
 ### How to choose the control points to subdivide
 
 
+### Algorithm 
 ```
 Input: 
 k // Spline Degree, which is also required multiplicity
