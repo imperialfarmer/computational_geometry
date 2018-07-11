@@ -6,6 +6,7 @@ from math import *
 def basisFun(u):
     """
     Basis functions of cubic bezier
+    Bernstein basis function
     :param u: a float, parametric position of point of interest, u in [0,1]
     :return r: array of basis function values, size 4*1
     """
@@ -21,7 +22,7 @@ def basisFun(u):
     return basis
 
 
-def bezierEval(q,u):
+def bezierEval(q, u):
     """
     Evaluate the bezier value at specific position
     :param  q: array of control points, p[i] in R^3
@@ -29,5 +30,5 @@ def bezierEval(q,u):
     :return r: array of bezier function values, size 3*1
     """
 
-    return np.matmul(basisFun(u),q)
+    return np.matmul(basisFun(u), q)
 

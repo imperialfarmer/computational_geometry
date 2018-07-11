@@ -91,19 +91,25 @@ def main():
     p_x = np.transpose(p)[0]
     p_y = np.transpose(p)[1]
     p_z = np.transpose(p)[2]
-    plt.plot(p_x, p_y, 'ro')
-    plt.plot(p_x, p_y, 'b-')
+    plt.plot(p_x, p_y, 'ro', label="Points")
+    plt.plot(p_x, p_y, 'r--')
 
     q_x = np.transpose(q)[0]
     q_y = np.transpose(q)[1]
     q_z = np.transpose(q)[2]
-    plt.plot(q_x, q_y, 'go')
-    plt.plot(q_x, q_y, 'g-')
+    plt.plot(q_x, q_y, 'gs', label="Control Points")
+    plt.plot(q_x, q_y, 'wx')
+    plt.plot(q_x, q_y, 'g--')
 
     f_x = np.transpose(f)[0]
     f_y = np.transpose(f)[1]
-    plt.plot(f_x, f_y, 'c-')
+    plt.plot(f_x, f_y, 'c-', label="Fitted Curve")
 
+    plt.title('Cubic Bezier Curve Fitting')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    leg = plt.legend(loc='lower right', ncol=1, shadow=False, fancybox=False)
+    leg.get_frame().set_alpha(0.5)
     plt.show()
 
 
