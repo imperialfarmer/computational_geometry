@@ -18,4 +18,15 @@ define matrix B = [b[t[1:N-1]][1] b[t[1:N-1]][2]] // size (N-2)*2
 q = (B.transpose()*B)^(-1)*B.transpose()*L
 return q
 ```
-
+## Example
+```
+Input: p = [[0,0,0],
+            [-1,3,0],
+            [3,4,0],
+            [8,2,0],
+            [10,-2,0],
+            [2,-6,0],
+            [-2,-8,0]]
+```
+The result can seen in:
+![result](https://github.com/imperialfarmer/computational_geometry/blob/master/cubicBezierCurveFitting/BezierFitting.png)
