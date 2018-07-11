@@ -1,9 +1,9 @@
 Least Square Error Cubic Bezier Fitting
 ====
 
-##Idea
+## Idea
 
-##Algorithm 
+## Algorithm 
 ```
 tbc
 ```
