@@ -20,3 +20,14 @@ def basisFun(u):
 
     return basis
 
+
+def bezierEval(q,u):
+    """
+    Evaluate the bezier value at specific position
+    :param  q: array of control points, p[i] in R^3
+            u: float, parametric coordinate
+    :return r: array of bezier function values, size 3*1
+    """
+
+    return np.matmul(basisFun(u),q)
+
