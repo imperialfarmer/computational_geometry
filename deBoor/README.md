@@ -1,12 +1,12 @@
 Cox De-Boor Algorithm:
 ====
 
-##Idea
+## Idea
 De-Boor Algorithm is an efficient and stable numerical method to evaluate the Splines.
 
 For a spline with degree of k, it will insert the point of interest t* k times to make sure the spline passes through t*, then the position of control point in this case is just t*. The procedure of inserting can be seen as conducting subdivision on the lines between control points, the original ones as well as newly-generated ones.
 
-##Algorithm 
+## Algorithm 
 ```
 Input: a value u 
 Output: the point on the curve, p(u) 
